@@ -2,11 +2,11 @@
 
 /**
  * Countdown
- * Copyright (C) 2013 2create
+ * Copyright (C) 2015 Foxship Technologies
  *
  * @package	countdown
- * @license	LGPL
- * @link	http://www.2create.at
+ * @license	GPL
+ * @link	https://www.foxship.com
  */
 
 
@@ -37,10 +37,10 @@ class Countdown extends System
 	 * @param	DateTime	$objCountdownEnd	The end of the countdown.
 	 * @return	void
 	 */
-	public function __construct($intCountdownStart, $intCountdownEnd)
+	public function __construct ($intCountdownStart, $intCountdownEnd)
 	{
-		$this->objCountdownStart = new DateTime('@' . (int) $intCountdownStart);
-		$this->objCountdownEnd = new DateTime('@' . (int) $intCountdownEnd);
+		$this->objCountdownStart = new DateTime ('@' . (int) $intCountdownStart);
+		$this->objCountdownEnd = new DateTime ('@' . (int) $intCountdownEnd);
 	}
 
 
@@ -50,11 +50,9 @@ class Countdown extends System
 	 * @param	string	$strFormat	The format of the return value.
 	 * @return	string				The formated difference between the dates.
 	 */
-	public function getDifference($strFormat)
+	public function getDifference ($strFormat)
 	{
-		$objInterval = $this->objCountdownStart->diff($this->objCountdownEnd);
-		return $objInterval->format($strFormat);
+		$objInterval = $this->objCountdownStart->diff ($this->objCountdownEnd);
+		return $objInterval->format ($strFormat);
 	}
 }
-
-?>
