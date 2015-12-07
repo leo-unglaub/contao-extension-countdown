@@ -2,17 +2,15 @@
 
 /**
  * Countdown
- * Copyright (C) 2013 2create
+ * Copyright (C) 2015 Foxship Technologies
  *
  * @package	countdown
- * @license	LGPL
- * @link	http://www.2create.at
+ * @license	GPL
+ * @link	https://www.foxship.com
  */
 
 
 /**
  * Hooks
  */
-$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('CountdownInsertTag', 'replaceInsertTags');
-
-?>
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array ('CountdownInsertTag', 'replaceInsertTags');
