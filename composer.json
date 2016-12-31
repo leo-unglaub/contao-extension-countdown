@@ -1,0 +1,40 @@
+{
+	"name": "leo-unglaub/contao-countdown",
+	"description": "This Contao CMS extension gives you some Insert Tags to display a simple countdown.",
+	"keywords": [
+		"contao",
+		"countdown",
+		"date"
+	],
+	"type": "contao-module",
+	"license": "LGPL-3.0+",
+	"authors": [
+		{
+			"name": "Leo Unglaub",
+			"email": "leo@unglaub.at",
+			"homepage": "https://leo.unglaub.at",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://bitbucket.org/leo-unglaub/contao-countdown/issues",
+		"source": "https://bitbucket.org/leo-unglaub/contao-countdown/src/",
+		"email": "leo@leo-unglaub.net",
+		"irc": "irc://irc.freenode.org/contao.dev"
+	},
+	"require": {
+		"php": "^5.6 || ^7.0",
+		"contao/core": "~3",
+		"contao-community-alliance/composer-installer": "*"
+	},
+	"replace": {
+		"contao-legacy/countdown": "*"
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"src/system/modules/countdown": "system/modules/countdown"
+			}
+		}
+	}
+}
