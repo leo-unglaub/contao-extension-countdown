@@ -1,16 +1,6 @@
 <?php
 
 /**
- * Countdown
- * Copyright (C) 2015 Foxship Technologies
- *
- * @package	countdown
- * @license	GPL
- * @link	https://www.foxship.com
- */
-
-
-/**
  * Class Countdown
  * Contains methods to handle countdowns
  */
